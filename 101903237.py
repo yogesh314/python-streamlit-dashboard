@@ -18,8 +18,8 @@ import streamlit as st
 
 #using PIL we can import Images
 from PIL import Image                
-img = Image.open('.\icons\ml.png')
-img1 = Image.open('.\icons\ds.png')
+img = Image.open('icons\ml.png')
+img1 = Image.open('icons\ds.png')
 
 #Importing all Classifiers so that we can find accuracy
 from sklearn.neighbors import KNeighborsClassifier  
