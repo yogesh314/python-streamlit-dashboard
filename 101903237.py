@@ -32,7 +32,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.decomposition import PCA
 
 #here we set title of page and give icon to it
-st.set_page_config(page_title="Data Science Dashboard",page_icon=img,layout="wide")
+st.set_page_config(page_title="Data Science Dashboard",layout="wide") #,page_icon=img
 st.title("💻 Data Science Dashboard")
 
 st.write("""
