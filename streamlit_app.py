@@ -45,7 +45,7 @@ st.sidebar.subheader('Create/Filter your search')
 
 #using selectbox we can select different choices
 dataset_name = st.sidebar.selectbox("Select Dataset 📍", ("Wheat Dataset","BankNoteAuthentication Dataset",
-                                    "Iris Dataset","Breast Cancer Dataset","Sonar Dataset",
+                                    "Iris Dataset","Sonar Dataset",
                                     "Wine Quality Dataset", "Diabetes Dataset"))
 classifier_name = st.sidebar.selectbox("Select Classifier📍", ("KNN","SVM", "Random Forest"))
 
@@ -57,8 +57,6 @@ def get_dataset(dataset_name):
         df = pd.read_csv("BankNoteAuthentication.csv")
     elif dataset_name == "Iris Dataset":
         df = pd.read_csv("Iris.csv")
-    elif dataset_name == "Breast Cancer Dataset":
-        df = pd.read_csv("Breast_cancer.csv")
     elif dataset_name == "Sonar Dataset":
         df = pd.read_csv("sonar.csv")
     elif dataset_name == "Wine Quality Dataset":
